@@ -42,6 +42,7 @@ body {
   margin: 0px auto;
   padding: 0px 15px;
 }
+/*  ===============BreakPoints Header=========================*/
 /* PC */
 @media (max-width: 1087px) {
   [class*="__container"] {
@@ -63,6 +64,8 @@ body {
 /* Mobile Small */
 @media (max-width: 479.98px) {
 }
+
+/*  ==============HEADER====================*/
 .header {
   position: absolute;
   width: 100%;
@@ -252,7 +255,7 @@ body {
   }
 }
 
-/*  ===============MAIN========================= */
+/*  ===============GET-STARTED========================= */
 
 .block-text {
 }
@@ -387,7 +390,7 @@ body {
 }
 
 
-/*  ===============================================  */
+/*  ==================STAY-SAFE=============================  */
 .stay-safe {
   padding:  80px 0px;
 }
@@ -478,4 +481,53 @@ body {
      .media-stay-safe {
      width: 290px;
   } 
+}
+
+/*  ============Experts====================  */
+
+.experts {
+  background-color: #FAFBFD;
+  padding: 103px 0px 115px 0px;
+}
+.experts__container {
+}
+.experts__statistics {
+}
+.statistics-experts {
+  max-width: 655px;
+  margin: 0px auto;
+  background: #fff;
+  box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+  border-radius: 16px;
+  position: relative;
+}
+.statistics-experts__body {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+}
+.statistics-experts__decor {
+  position: absolute;
+  background-color: #ec5863;
+  border-radius: 30px;
+}
+.statistics-experts__decor_1 {
+  width: 65px;
+  height: 65px;
+  transform: rotate(-30deg);
+  bottom: -31px;
+  left: -31px;
+  border-radius: 16px;
+}
+.statistics-experts__decor_2 {
+}
+.statistics-experts__decor_3 {
+}
+
+.body-statistics-experts__items {
+}
+.body-statistics-experts__value {
+}
+.body-statistics-experts__text {
 }
