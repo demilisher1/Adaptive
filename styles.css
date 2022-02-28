@@ -259,6 +259,9 @@ body {
 
 .block-text {
 }
+.block-text_center {
+  text-align: center;
+}
 .block-text__title {
   font-weight: 700;
   font-size: 44px;
@@ -277,6 +280,10 @@ body {
 .block-text__text {
   line-height: 138.5%;
   letter-spacing: 0.08em;
+}
+.block-text__text_mw {
+  max-width: 620px;
+  margin: 0 auto;
 }
 .block-text__text:not(:last-child) {
   margin: 0px 0px 24px 0px;
@@ -384,22 +391,21 @@ body {
     text-align: center;
     padding: 30px 0px;
   }
-  .get-started__video{
+  .get-started__video {
     padding: 0;
   }
 }
 
-
 /*  ==================STAY-SAFE=============================  */
 .stay-safe {
-  padding:  80px 0px;
+  padding: 80px 0px;
 }
 .stay-safe__container {
   display: flex;
   align-items: center;
 }
 .stay-safe__media {
-  flex: 0 1 50%; 
+  flex: 0 1 50%;
 }
 
 .stay-safe__content {
@@ -458,9 +464,9 @@ body {
   bottom: 107px;
   right: 34px;
 }
-@media (max-width: 991.98px){
+@media (max-width: 991.98px) {
   .stay-safe {
-    padding:  40px 0px;
+    padding: 40px 0px;
   }
 }
 @media (min-width: 991.98px) {
@@ -478,21 +484,25 @@ body {
 }
 
 @media (max-width: 479.98px) {
-     .media-stay-safe {
-     width: 290px;
-  } 
+  .media-stay-safe {
+    width: 290px;
+  }
 }
 
 /*  ============Experts====================  */
 
 .experts {
-  background-color: #FAFBFD;
+  background-color: #fafbfd;
   padding: 103px 0px 115px 0px;
 }
 .experts__container {
 }
 .experts__statistics {
 }
+.experts__block-text {
+  width: 400px;
+}
+
 .statistics-experts {
   max-width: 655px;
   margin: 0px auto;
@@ -501,7 +511,49 @@ body {
   border-radius: 16px;
   position: relative;
 }
+.experts__body {
+  display: flex;
+  align-items: center;
+}
+.experts__content {
+  flex: 0 1 50%;
+  padding: 0px 20px 0px 0px;
+}
+.experts__video {
+  flex: 0 1 50%;
+  padding: 0px 0px 30% 0px;
+  position: relative;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.experts__video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+@media (max-width: 767.98px) {
+  .experts {
+    padding: 80px 0px 30px 0px;
+  }
+  .experts__body {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .experts__video {
+    padding: 0px 0px 58% 0px;
+  }
+  .experts__content {
+    padding: 0;
+    margin: 0px 0px 30px 0px;
+  }
+}
+
 .statistics-experts__body {
+  margin: 0px 0px 80px 0px;
   position: relative;
   z-index: 2;
   background: #fff;
@@ -516,18 +568,204 @@ body {
   width: 65px;
   height: 65px;
   transform: rotate(-30deg);
-  bottom: -31px;
-  left: -31px;
+  bottom: -21px;
+  left: -21px;
   border-radius: 16px;
 }
 .statistics-experts__decor_2 {
+  width: 97px;
+  height: 97px;
+  right: 50%;
+  top: -40px;
+  border-radius: 30px;
+  transform: rotate(30deg);
 }
 .statistics-experts__decor_3 {
+  width: 128px;
+  height: 128px;
+  right: -65px;
+  top: 0;
+  border-radius: 30px;
+  transform: rotate(-30deg);
 }
 
+.body-statistics-experts {
+  padding: 25px 80px;
+  display: flex;
+  align-items: center;
+}
 .body-statistics-experts__items {
+  flex: 0 1 25%;
+  text-align: center;
+}
+.body-statistics-experts__items:last-child {
+  flex: 0 1 50%;
 }
 .body-statistics-experts__value {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #ec5863;
+  margin-bottom: 5px;
 }
 .body-statistics-experts__text {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 767.98px) {
+  .statistics-experts__body {
+    margin: 0px 0px 50px 0px;
+  }
+  .body-statistics-experts {
+    padding: 25px;
+  }
+}
+@media (max-width: 479.98px) {
+  .body-statistics-experts {
+    flex-direction: column;
+  }
+  .body-statistics-experts__items:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+  }
+}
+/*  =======================Healthcare===========================  */
+
+.healthcare {
+  padding: 80px 0px 30px 0px;
+}
+.healthcare__container {
+}
+.healthcare__block-text {
+  margin: 0px 0px 45px 0px;
+}
+
+.healthcare__items {
+  display: flex;
+}
+.healthcare__column {
+  position: relative;
+  padding: 0px 36px;
+  flex: 0 1 33.333%;
+}
+
+.healthcare__item {
+}
+
+.item-healthcare {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 35px 17px;
+}
+.item-healthcare__icon {
+  margin: 0px 0px 58px 0px;
+}
+.item-healthcare__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 138.5%;
+  color: #000000;
+  margin: 0px 0px 4px 0px;
+}
+
+.item-healthcare__text {
+  line-height: 138.5%;
+}
+
+.healthcare__column_1::before,
+.healthcare__column_1::after {
+  content: "";
+  position: absolute;
+  background-color: #ec5863;
+  border-radius: 16px;
+}
+.healthcare__column_1::before {
+  width: 65px;
+  height: 65px;
+  bottom: -35px;
+  left: 15px;
+  transform: rotate(-30deg);
+}
+.healthcare__column_1::after {
+  width: 97px;
+  height: 97px;
+  top: 35px;
+  right: -10px;
+  border-radius: 30px;
+  transform: rotate(30deg);
+}
+.healthcare__column_2::after {
+  content: "";
+  position: absolute;
+  background-color: #ec5863;
+  width: 127px;
+  height: 127px;
+  bottom: -35px;
+  right: -35px;
+  border-radius: 30px;
+  transform: rotate(55deg);
+}
+.healthcare__column_3::before {
+  content: "";
+  position: absolute;
+  background-color: #ec5863;
+  width: 65px;
+  height: 65px;
+  top: -25px;
+  right: 10px;
+  border-radius: 16px;
+  transform: rotate(52deg);
+}
+@media (max-width: 1087px) {
+  .healthcare__column {
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 991.98px) {
+  .healthcare {
+    padding: 30px 0px 30px 0px;
+  }
+  .healthcare__items {
+    flex-direction: column;
+  }
+  .healthcare__column:not(:last-child){
+    margin: 0px 0px 25px 0px;
+  }
+  
+}
+/*  ==========FOOTER=====================  */
+
+.footer {
+  padding: 65px 0;
+}
+.footer__container {
+}
+.footer__items {
+  display: flex;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__item {
+}
+@media (max-width: 500px) {
+  .footer {
+    padding: 30px 0;
+  }
+  .footer__items {
+    flex-direction: column;
+  }
 }
